@@ -1,0 +1,84 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+    background-color: #DDE1D4;
+    padding: 15px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#big-wrapper {
+    height: 60%;
+    display: grid;
+    grid-template:
+        "big-first big-second" 1fr
+        "big-third small-wrapper" 1fr / 1fr 1fr;
+}
+
+#small-wrapper {
+    grid-area: small-wrapper;
+    display: grid;
+    grid-template:
+        "small-first small-second" 1fr
+        "small-third small-fourth" 1fr / 1fr 1fr;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.big {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.small {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#big-first {
+    background-color: #D9E7DE;
+    color: #F14705;
+    grid-area: big-first;
+}
+
+#big-second {
+    background-color: #008A69;
+    color: white;
+    grid-area: big-second;
+}
+
+#big-third {
+    background-color: #F14705;
+    color: white;
+    grid-area: big-third;
+}
+
+#small-first {
+    background-color: #F7ABC5;
+    color: #F14705;
+    grid-area: small-first;
+}
+
+#small-second {
+    background-color: #5F5FA9;
+    color: white;
+    grid-area: small-second;
+}
+
+#small-third {
+    background-color: #FFC027;
+    color: #F14705;
+    grid-area: small-third;
+}
+
+#small-fourth {
+    background-color: #F87374;
+    color: white;
+    grid-area: small-fourth;
+}
