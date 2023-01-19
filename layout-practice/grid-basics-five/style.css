@@ -1,0 +1,108 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color:#291B6C;
+}
+
+#main-screen {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  position: relative;
+  grid-template: 
+  "top top top top" 1fr
+  "nav-bar body-one body-two order" 18fr
+  "news body-one body-two reservations" 16fr
+  "sns body-one body-two reservations" 2fr
+  "bottom bottom bottom bottom" 1fr / 30px 850px 850px 30px;
+}
+
+#name {
+  font-size: 128px;
+  color: white;
+  position: absolute;
+  top: 400px;
+  left: 425px;
+}
+
+#top {
+  grid-area: top;
+  background-color: white;
+  border: 3px solid #5D69E5;
+  color: #5D69E5;
+}
+
+#nav-bar {
+  grid-area: nav-bar;
+  background-color: #5D69E5;
+  color: white;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  padding: 30px 10px;
+}
+
+#body-one {
+  grid-area: body-one;
+  background-image: url("https://kpopping.com/documents/2d/0/1800/221023-LE-SSERAFIM-Chaewon-ANTIFRAGILE-at-INKIGAYO-documents-4.jpeg?v=0e47f");
+  background-size: cover;
+}
+
+#body-two{
+  grid-area: body-two;
+  background-image: url("https://kpopping.com/documents/64/5/1800/221023-LE-SSERAFIM-Chaewon-ANTIFRAGILE-at-Inkigayo-documents-1.jpeg?v=0e47f");
+  background-size: cover;
+}
+
+#order {
+  grid-area: order;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: #5D69E5;
+  border: 3px solid #291B6C;
+  color: white;
+  padding: 30px 10px;
+}
+
+#news {
+  grid-area: news;
+  background-color: white;
+  border: 3px solid #5D69E5;
+  color: #5D69E5;
+  writing-mode: vertical-rl;
+  padding: 30px 10px;
+}
+
+#sns {
+  grid-area: sns;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #5D69E5;
+  color: #5D69E5;
+}
+
+#reservations {
+  grid-area: reservations;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: #5D69E5;
+  border: 3px solid #291B6C;
+  color: white;
+  padding: 30px 10px;
+}
+
+#bottom {
+  grid-area: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 3px solid #5D69E5;
+  color: #5D69E5;
+}
